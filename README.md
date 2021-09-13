@@ -1,4 +1,6 @@
-# gmail
+# Brute Force  gmail 
+
+# Usem O tor para sua Segurança
 
 # Instalação da ferramenta 
 
