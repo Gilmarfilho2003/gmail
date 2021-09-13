@@ -9,4 +9,8 @@ apt install python3
 
 apt install git 
 
-git clone https://github.com/Gilmarfilho2003/gmail
+git clone https://github.com/Gilmarfilho2003/gmail,
+
+python3 gmail.py
+
+
