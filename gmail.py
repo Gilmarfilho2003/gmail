@@ -44,7 +44,7 @@ import time
 for i in range(1,10+1): 
        foto=pyautogui.screenshot()
        time.sleep(5)
-        foto.save("foto1%d.png%(i))
+        foto.save
         print("Working %d (i))
 print("Worked") 
 
