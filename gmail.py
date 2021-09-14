@@ -19,7 +19,6 @@ class GmailBruteForce():
         file = open(path, 'r',encoding='utf8').read().splitlines()
         for line in file:
             self.passwords.append(line)
-
     def init_smtplib(self):
         self.smtp = smtplib.SMTP("smtp.gmail.com",587)
         self.smtp.starttls()
